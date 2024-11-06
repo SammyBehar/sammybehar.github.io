@@ -1,0 +1,176 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête principal */
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+/* Menu principal */
+header nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown pour les marques */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    padding: 10px 20px;
+}
+
+.dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Effet au survol */
+.menu a:hover, .dropdown-content li a:hover {
+    color: #ff8c00;
+}
+
+/* Section principale */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Behind the text */
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/* Image 1 */
+.image1 {
+    width: 550px;
+}
+
+/* Image 2 */
+.image2 {
+    width: 600px;
+}
+
+/* Image 3 */
+.image3 {
+    width: 600px;
+}
+
+/* Section des modèles */
+.modeles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.modele {
+    width: 200px;
+    text-align: center;
+}
+
+.modele img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modele p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Style pour la section "Bienvenue" */
+#hero {
+    background-color: #e0e0e0;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
